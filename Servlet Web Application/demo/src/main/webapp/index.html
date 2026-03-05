@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <title>Izbor jela za narednu nedelju</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #2980b9;
+        }
+        .center {
+            text-align: center;
+        }
+        .admin-section {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Izbor jela za narednu nedelju</h1>
+    <p>
+        Dobro došli u aplikaciju za izbor jela! Molimo Vas da odaberete jela koja želite da konzumirate tokom radne nedelje.
+        Za svaki radni dan možete izabrati jedno jelo iz ponuđene liste.
+    </p>
+    <p>
+        Nakon što potvrdite svoj izbor, nećete moći da ga promenite dok administrator ne obriše sve porudžbine.
+    </p>
+    <div class="center">
+        <a href="meal-select" class="btn">Izaberi jela</a>
+    </div>
+
+    <div class="admin-section">
+        <h2>Admin pristup</h2>
+        <p>Pristupite pregledu svih porudžbina sa odgovarajućom lozinkom:</p>
+        <div class="center">
+            <form action="selected-meals" method="get">
+                <input type="password" name="lozinka" placeholder="Unesite lozinku" required>
+                <button type="submit" class="btn">Prikaži porudžbine</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
